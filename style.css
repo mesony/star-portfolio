@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+/* starting of icon section */
+
+.all{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 10px 160px;
+}
+.helt{
+    color: white;
+    /* line-height: 10px; */
+}
+.helt>p{
+    color:  #828282;
+    font-size: 14px;
+}
+img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.buttons{
+    margin-top: 30px;
+    color: green;
+    display: flex;
+    gap: 10px;
+}
+.buttons>.first-button{
+    color: white;
+    /* height: 30px; */
+    background-color: #27AE60;
+    border: none;
+    padding: 10px 30px;
+
+    
+}
+.buttons>.second-button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 60px;
+}
+/* end of icon section */
+
+/* starting of About me section */
+.about{
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 600px;
+    align-content: center;
+    margin:auto;
+}
+.allcircle{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    width: 900px;
+    margin: 40px auto;
+    align-items: center;
+}
+.bit{
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 5px;
+}
+.bigCircle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smallCircle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+.bit>h4{
+    font-size: 15px;
+    /* margin-bottom: 5px; */
+}
+/* end of about section */
+
+/* statring of what i do section */
+.hero1{
+    text-align: center;
+    color: white;
+}
+.hero{
+    display: flex;
+    gap: 80px;
+    margin-left: 100px;
+}
+.dev1>img{
+    margin-left: 10px;
+    width: 40px;
+    height: 30px;
+}
+.dev1{
+    width: 40vh;
+    margin-left: 20px;
+    background-color: #828282;    
+}
+.dev1>h4{
+    margin-top: 15px;
+    color: white;
+}
+/* end of what i do section */
+
+/* starting of my skills section */
+.mine{
+    margin: 15px 0px;
+    color: white;
+    text-align: center;
+}
+.web{
+    display: flex;
+    background-color: #828282;
+    width: 800px;
+    margin-left: 250px;
+    height: 20vh;
+    justify-content: space-between;
+
+}
+.web1{
+    color: dimgrey;
+}
+.web>h3{
+    font-size: 50px;
+}
+.web1>p{
+    color: #27AE60;
+}
+/* end of my skills section */
+
+/* starting of get in touch section */
+.get{
+    margin: 15px 0px;
+    color: white;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 0px;
+    align-items: center;
+}
+.form-input{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+input[type=text]{
+    padding: 10px 15px;
+    /* margin-left: 249px; */
+    margin-top: 40px;
+    width: 350px;
+    border: none;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    border-bottom: 1px solid whitesmoke;
+    
+}
+textarea{
+    background-color: transparent;
+    color: white;
+    height: 30vh;
+    width: 100vh;
+    margin-left: 25px;
+}
+.site{
+    color: white;
+}
+button{
+    color: white;
+    /* height: 30px; */
+    background-color: #27AE60;
+    border: none;
+    padding: 10px 30px;
+
+    
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        background-color: black;
+        
+    }
+    .all{
+        flex-direction: column-reverse;
+        padding: 20px;
+        gap: 40px;
+    }  
+    .buttons{
+        flex-direction: column;
+    }
+    img{
+        height: auto;
+        width: 100%;
+    }
+    .about{
+        width:100%;
+    }
+    .allcircle{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+    
+}
+.hero1{
+    margin-left: 180px;
+    text-align: center;
+    color: white;
+}
+.hero{
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 100px;
+}
+.dev1{
+    width: 40vh;
+    margin: auto;
+    align-items: center;
+}
+.hero{
+    display: flex;
+    gap: 50px;
+    margin: auto;
+}
+.hero1{
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+.web{
+    margin: auto;
+    width: 100%;
+    height: 50px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+}
+input[type=text]{
+    padding: 10px 15px;
+    margin-top: 40px;
+    width: 100%;
+    
+}
+textarea{
+    width: 100%;
+    margin: auto;
+}
+
+
+}
